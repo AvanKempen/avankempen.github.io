@@ -13,9 +13,6 @@
 		* Default styles
 		* Transition
 		* Colors 
-		* Shadow
-		* Add padding
-		* Add margin
 		* Rounded corners
  **/
  
@@ -46,7 +43,7 @@ html, body {
 
 /* Body */
 body {
-	background: #f1f1f1;
+	background: #ffffff;
 	color: #333333;
 	font: 12px "Calibri", tahoma, verdana; 
 }
@@ -69,17 +66,17 @@ a:hover {
 }
 
 h1 { 
-	font-size: 25px;
+	font-size: 40px;
 	font-weight: bold;
 }
 
 h2 {
-	font-size: 21px;
+	font-size: 32px;
 	font-weight: bold;
 }
 
 h3 { 
-	font-size: 16px;
+	font-size: 25px;
 	font-weight: bold;
 }
 
@@ -137,54 +134,6 @@ h3 {
 	color: #fff;	
 }
 
-.block-gray {
-	background: #666666;	
-}
-
-.text-gray {
-	color: #666666;	
-}
-
-.block-darkgray {
-	background: #333333;	
-}
-
-.text-darkgray {
-	color: #333333;	
-}
-
-.block-lightgray {
-	background: #ccc;	
-}
-
-.text-lightgray {
-	color: #ccc;	
-}
-
-.block-lightergray {
-	background: #f1f1f1;	
-}
-
-.text-lightergray {
-	color: #f1f1f1;	
-}
-
-.block-blue {
-	background: #00b6f0;	
-}
-
-.text-blue {
-	color: #00b6f0;	
-}
-
-.block-red {
-	background: #cf0404;	
-}
-
-.text-red {
-	color: #cf0404;	
-}
-
 /* Shadow */
 .block-shadow {
 	box-shadow: 0 0 15px rgba(0,0,0,0.1);	
@@ -208,188 +157,6 @@ h3 {
 	-moz-box-shadow: 0 0 15px rgba(0,0,0,0.5);	
 	-ms-box-shadow: 0 0 15px rgba(0,0,0,0.5);	
 	-o-box-shadow: 0 0 15px rgba(0,0,0,0.5);	
-}
-
-.text-shadow {
-	text-shadow: 0 0 7px rgba(0,0,0,0.5);		
-}
-
-/* Add padding */
-.padding-small {
-	padding: 5px;	
-}
-
-.padding-medium {
-	padding: 10px;	
-}
-
-.padding-large {
-	padding: 15px;	
-}
-
-.padding-extralarge {
-	padding: 25px;	
-}
-
-.padding-small-top {
-	padding-top: 5px;	
-}
-
-.padding-medium-top {
-	padding-top: 10px;	
-}
-
-.padding-large-top {
-	padding-top: 15px;	
-}
-
-.padding-extralarge-top {
-	padding-top: 25px;	
-}
-
-.padding-small-bottom {
-	padding-bottom: 5px;	
-}
-
-.padding-medium-bottom {
-	padding-bottom: 10px;	
-}
-
-.padding-large-bottom {
-	padding-bottom: 15px;	
-}
-
-.padding-extralarge-bottom {
-	padding-bottom: 25px;	
-}
-
-.padding-small-right {
-	padding-right: 5px;	
-}
-
-.padding-medium-right {
-	padding-right: 10px;	
-}
-
-.padding-large-right {
-	padding-right: 15px;	
-}
-
-.padding-extralarge-right {
-	padding-right: 25px;	
-}
-
-.padding-small-left {
-	padding-left: 5px;	
-}
-
-.padding-medium-left {
-	padding-left: 10px;	
-}
-
-.padding-large-left {
-	padding-left: 15px;	
-}
-
-.padding-extralarge-left {
-	padding-left: 25px;	
-}
-
-.padding-small {
-	padding: 3px;	
-}
-
-.padding-medium {
-	padding: 5px;	
-}
-
-.padding-large {
-	padding: 10px;	
-}
-
-.padding-extralarge {
-	padding: 15px;	
-}
-
-/* Add margin */
-.margin-small {
-	margin: 5px;	
-}
-
-.margin-medium {
-	margin: 10px;	
-}
-
-.margin-large {
-	margin: 15px;	
-}
-
-.margin-extralarge {
-	margin: 25px;	
-}
-
-.margin-small-top {
-	margin-top: 5px;	
-}
-
-.margin-medium-top {
-	margin-top: 10px;	
-}
-
-.margin-large-top {
-	margin-top: 15px;	
-}
-
-.margin-extralarge-top {
-	margin-top: 25px;	
-}
-
-.margin-small-bottom {
-	margin-bottom: 5px;	
-}
-
-.margin-medium-bottom {
-	margin-bottom: 10px;	
-}
-
-.margin-large-bottom {
-	margin-bottom: 15px;	
-}
-
-.margin-extralarge-bottom {
-	margin-bottom: 25px;	
-}
-
-.margin-small-right {
-	margin-right: 5px;	
-}
-
-.margin-medium-right {
-	margin-right: 10px;	
-}
-
-.margin-large-right {
-	margin-right: 15px;	
-}
-
-.margin-extralarge-right {
-	margin-right: 25px;	
-}
-
-.margin-small-left {
-	margin-left: 5px;	
-}
-
-.margin-medium-left {
-	margin-left: 10px;	
-}
-
-.margin-large-left {
-	margin-left: 15px;	
-}
-
-.margin-extralarge-left {
-	margin-left: 25px;	
 }
 
 /* Rounded corners */
