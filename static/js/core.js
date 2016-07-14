@@ -32,7 +32,7 @@ var core = {
 			// Load if found
 			if(core.modules[name]){
 				core.activeModules.push(core.modules[name]);
-				core.activeModules[core.activeModules.length - 1].construct.call(core.activeModules[syca.activeModules.length - 1], div || $());
+				core.activeModules[core.activeModules.length - 1].construct.call(core.activeModules[core.activeModules.length - 1], div || $());
 			}
 		}
 
