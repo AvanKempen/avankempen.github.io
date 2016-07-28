@@ -10,18 +10,16 @@ var core = {
 			core.activeModules = [];
 		}
 		
-		$("body").find('[data-module]').each(function(){
-			var $this = $(this),
-			    moduleName = $this.data('module');
+		$(document).find('[data-module]').each(function(){
+			var moduleName = $(this).data('module');
 
 			if(moduleName){
-				core.loadModule(moduleName, $this);
+				core.loadModule(moduleName, $(this));
 			}
 		});
 	},
 	
 	loadModule: function(module, div) {
-		// Check for parent modules
 		var modules = module.split('/'),
 		    name = '';
 
@@ -29,7 +27,6 @@ var core = {
 			if(name.length) name += '/';
 			name += modules[i];
 
-			// Load if found
 			if(core.modules[name]){
 				core.activeModules.push(core.modules[name]);
 				core.activeModules[core.activeModules.length - 1].construct.call(core.activeModules[core.activeModules.length - 1], div || $());

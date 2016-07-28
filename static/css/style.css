@@ -14,6 +14,13 @@
 		* Transition
 		* Colors 
 		* Rounded corners
+		* Header
+		* Container
+		* Section
+		* Footer
+		* Handy
+		* Additional
+		* Columns
  **/
  
 /* Reset */
@@ -45,7 +52,7 @@ html, body {
 body {
 	background: #ffffff;
 	color: #333333;
-	font: 12px "Calibri", tahoma, verdana; 
+	font: 12px "Droid Sans", tahoma, verdana; 
 }
 
 /* Default styles */
@@ -66,18 +73,30 @@ a:hover {
 }
 
 h1 { 
-	font-size: 40px;
+	font-size: 60px;
+	line-height: 100px;
 	font-weight: bold;
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 40px;
+	line-height: 80px;
 	font-weight: bold;
 }
 
 h3 { 
 	font-size: 25px;
+	line-height: 50px;
 	font-weight: bold;
+}
+
+p {
+	line-height: 18px;	
+}
+
+p.lead {
+	font-size: 16px;
+	line-height: 26px;	
 }
 
 .bold {
@@ -127,11 +146,19 @@ h3 {
 
 /* Colors */
 .block-white {
-	background: #ffffff;	
+	background-color: #ffffff;	
 }
 
 .text-white {
 	color: #fff;	
+}
+
+.block-blue {
+	background-color: #3DA8FF;	
+}
+
+.text-blue {
+	color: #3DA8FF;	
 }
 
 /* Shadow */
@@ -182,4 +209,161 @@ h3 {
 	border-radius: 50%;	
 	-webkit-border-radius: 50%;		
 	-moz-border-radius: 50%;		
+}
+
+/* Logo */
+.logo {
+	background-image: url('../images/logo.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: inline-block;
+	width: 210px;
+	height: 45px;
+}
+
+.logo.dark {
+	background-image: url('../images/logo-dark.png');	
+}
+
+.logo span {
+	opacity: 0;
+}
+
+/* Header */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;	
+	padding: 5px 0;
+	z-index: 10;
+}
+
+/* Container */
+.container {
+	width: 90%;
+	margin: 0 auto;	
+	position: relative;
+	z-index: 5;
+}
+
+/* Section */
+section {
+	display: block;
+	position: relative;
+	z-index: 1;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.section-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;	
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+
+/* Footer */
+footer {
+	background: #333333;
+	border-top: 1px solid #444444;
+	color: #ffffff;
+	padding: 25px 0;
+}
+
+/* Handy */
+.full-height {
+	height: 100vh;	
+}
+
+.table-content {
+	display: table;	
+}
+
+.middle-content {
+	vertical-align: middle;
+	display: table-cell;	
+}
+
+.add-space {
+	padding-top: 25px;
+	padding-bottom: 25px;	
+}
+
+/* Additional */
+.time,
+.day {
+	font-weight: bold;	
+}
+
+/* Columns */
+.column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8, .column-9, .column-10, .column-11, .column-12 {
+	display: inline-block;
+	padding: 0 15px;
+	position: relative;
+	float: left;
+	margin: 0 0 15px 0;
+}
+
+.column-12 {
+    width: 100%
+}
+
+.column-11 {
+    width: 91.66666667%
+}
+
+.column-10 {
+    width: 83.33333333%
+}
+
+.column-9 {
+    width: 75%
+}
+
+.column-8 {
+    width: 66.66666667%
+}
+
+.column-7 {
+    width: 58.33333333%
+}
+
+.column-6 {
+    width: 50%
+}
+
+.column-5 {
+    width: 41.66666667%
+}
+
+.column-4 {
+    width: 33.33333333%
+}
+
+.column-3 {
+    width: 25%
+}
+
+.column-2 {
+    width: 16.66666667%
+}
+
+.column-1 {
+    width: 8.33333333%
+}
+
+@media screen and (max-width: 768px) {
+	.column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8, .column-9, .column-10, .column-11, .column-12 {
+		width: 100%;	
+		float: inherit;
+	}	
 }
